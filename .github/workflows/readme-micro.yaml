@@ -5,6 +5,10 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
+    inputs:
+      parameter:
+        description: my parameter
 jobs:
   sync:
     runs-on: ubuntu-latest
